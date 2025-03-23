@@ -30,7 +30,8 @@ public class AppConfig {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty(Environment.DIALECT,
                 "org.hibernate.dialect.MySQLDialect");
-        hibernateProperties.setProperty(Environment.HBM2DDL_AUTO, "update"); // Changed to update for persistence
+        hibernateProperties.setProperty(Environment.HBM2DDL_AUTO,
+                "update"); // Changed to update for persistence
         hibernateProperties.setProperty(Environment.SHOW_SQL, "true");
         sessionFactory.setHibernateProperties(hibernateProperties);
         return sessionFactory;
