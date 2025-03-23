@@ -1,7 +1,7 @@
 package application.config;
 
-import javax.sql.DataSource;
 import java.util.Properties;
+import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.cfg.Environment;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +28,8 @@ public class AppConfig {
         sessionFactory.setDataSource(dataSource);
         sessionFactory.setPackagesToScan("application.model"); // Updated to match Book package
         Properties hibernateProperties = new Properties();
-        hibernateProperties.setProperty(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
+        hibernateProperties.setProperty(Environment.DIALECT,
+                "org.hibernate.dialect.MySQLDialect");
         hibernateProperties.setProperty(Environment.HBM2DDL_AUTO, "update"); // Changed to update for persistence
         hibernateProperties.setProperty(Environment.SHOW_SQL, "true");
         sessionFactory.setHibernateProperties(hibernateProperties);
