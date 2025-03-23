@@ -1,10 +1,10 @@
-package application.service.Impl;
+package application.repository.impl;
 
 import application.model.Book;
-import application.service.BookService;
+import application.repository.BookRepository;
 import java.util.List;
 
-public class BookServiceImpl implements BookService {
+public class BookRepositoryImpl implements BookRepository {
     @Override
     public Book save(Book book) {
         return null;
