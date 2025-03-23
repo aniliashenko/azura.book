@@ -3,8 +3,6 @@ package application.service;
 import application.dto.BookDto;
 import application.dto.CreateBookRequestDto;
 import application.model.Book;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 public interface BookService {

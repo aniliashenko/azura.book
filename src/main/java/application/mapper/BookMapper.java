@@ -2,10 +2,13 @@ package application.mapper;
 
 import application.dto.BookDto;
 import application.model.Book;
-import org.mapstruct.Mapper;
 import org.mapstruct.MapperConfig;
+import org.mapstruct.Mapping;
 
-@Mapper(config = MapperConfig.class)
+@MapperConfig(componentModel = "spring")
 public interface BookMapper {
     BookDto toDto(Book book);
+
+    @Mapping(target = "id", ignore = true)
+    Book toEntity(BookDto bookDto);
 }

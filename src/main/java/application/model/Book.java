@@ -1,7 +1,11 @@
 package application.model;
 
-import jakarta.persistence.*;
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.math.BigDecimal;
 import lombok.Getter;
 import lombok.Setter;
@@ -49,14 +53,14 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", isbn='" + isbn + '\'' +
-                ", price=" + price +
-                ", description='" + description + '\'' +
-                ", coverImage='" + coverImage + '\'' +
-                '}';
+        return "Book{"
+                + "id=" + id
+                + ", title='" + title + '\''
+                + ", author='" + author + '\''
+                + ", isbn='" + isbn + '\''
+                + ", price=" + price
+                + ", description='" + description + '\''
+                + ", coverImage='" + coverImage + '\''
+                + "}";
     }
 }

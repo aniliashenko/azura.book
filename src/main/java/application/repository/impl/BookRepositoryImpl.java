@@ -4,12 +4,12 @@ import application.dto.BookDto;
 import application.dto.CreateBookRequestDto;
 import application.model.Book;
 import application.repository.BookRepository;
+import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import java.util.List;
 
 @Repository
 public class BookRepositoryImpl implements BookRepository {
@@ -19,6 +19,7 @@ public class BookRepositoryImpl implements BookRepository {
     public BookRepositoryImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     @Override
     public Book save(Book book) {
         if (book == null) {

@@ -3,13 +3,12 @@ package application;
 import application.config.AppConfig;
 import application.model.Book;
 import application.repository.BookRepository;
+import java.math.BigDecimal;
+import java.util.List;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.math.BigDecimal;
-import java.util.List;
 
 @SpringBootApplication
 public class Application {

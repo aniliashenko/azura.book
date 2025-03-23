@@ -1,5 +1,7 @@
 package application.config;
 
+import java.util.Properties;
+import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.cfg.Environment;
 import org.springframework.context.annotation.Bean;
@@ -7,13 +9,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
-import javax.sql.DataSource;
-import java.util.Properties;
-
 @Configuration
-@ComponentScan(basePackages = "mate.academy")
+@ComponentScan(basePackages = "application")
 public class AppConfig {
-
     @Bean
     public DataSource getDataSource() {
         BasicDataSource dataSource = new BasicDataSource();

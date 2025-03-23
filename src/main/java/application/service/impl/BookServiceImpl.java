@@ -6,9 +6,9 @@ import application.mapper.BookMapper;
 import application.model.Book;
 import application.repository.BookRepository;
 import application.service.BookService;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import java.util.List;
 
 @RequiredArgsConstructor
 @Service
@@ -24,7 +24,7 @@ public class BookServiceImpl implements BookService {
     @Override
     public List<Book> findAll() {
         return null;
-//        return bookRepository.findAll().stream().map(BookMapper::toDto).toList();
+        // return bookRepository.findAll().stream().map(BookMapper::toDto).toList();
     }
 
     @Override
