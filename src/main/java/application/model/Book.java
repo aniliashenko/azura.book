@@ -1,4 +1,4 @@
-package azura.book.store.model;
+package application.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -6,8 +6,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-import org.antlr.v4.runtime.misc.NotNull;
 import java.math.BigDecimal;
+import org.antlr.v4.runtime.misc.NotNull;
 
 @Entity
 @Data

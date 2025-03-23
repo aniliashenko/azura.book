@@ -1,8 +1,7 @@
-package azura.book.store.service.Impl;
+package application.service.Impl;
 
-import azura.book.store.model.Book;
-import azura.book.store.service.BookService;
-
+import application.model.Book;
+import application.service.BookService;
 import java.util.List;
 
 public class BookServiceImpl implements BookService {

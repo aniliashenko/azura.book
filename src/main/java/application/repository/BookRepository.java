@@ -1,9 +1,10 @@
-package azura.book.store.repository;
+package application.repository;
 
-import azura.book.store.model.Book;
+import application.model.Book;
 import java.util.List;
 
 public interface BookRepository {
     Book save(Book book);
+
     List findAll();
 }

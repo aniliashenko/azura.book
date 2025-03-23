@@ -1,4 +1,4 @@
-package azura.book.store;
+package application;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

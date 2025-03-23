@@ -1,8 +1,7 @@
-package azura.book.store.repository.Impl;
+package application.repository.Impl;
 
-import azura.book.store.model.Book;
-import azura.book.store.repository.BookRepository;
-
+import application.model.Book;
+import application.repository.BookRepository;
 import java.util.List;
 
 public class BookRepositoryImpl implements BookRepository {
