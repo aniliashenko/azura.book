@@ -10,7 +10,7 @@ public interface BookRepository {
 
     List<Book> findAll();
 
-    List<BookDto> getAll();
+    List<Book> getAll();
 
     BookDto getBookById(Long id);
 

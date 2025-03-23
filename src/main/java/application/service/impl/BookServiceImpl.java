@@ -22,14 +22,14 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public List<BookDto> findAll() {
+    public List<Book> findAll() {
         return null;
 //        return bookRepository.findAll().stream().map(BookMapper::toDto).toList();
     }
 
     @Override
-    public List<BookDto> getAll() {
-        return bookRepository.getAll();
+    public List<Book> getAll() {
+        return null;
     }
 
     @Override

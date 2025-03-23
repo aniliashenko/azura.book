@@ -72,7 +72,7 @@ public class BookRepositoryImpl implements BookRepository {
     }
 
     @Override
-    public List<BookDto> getAll() {
+    public List<Book> getAll() {
         return List.of();
     }
 

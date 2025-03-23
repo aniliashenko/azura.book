@@ -10,9 +10,9 @@ import java.util.List;
 public interface BookService {
     Book save(Book book);
 
-    List<BookDto> findAll();
+    List<Book> findAll();
 
-    List<BookDto> getAll();
+    List<Book> getAll();
 
     BookDto getBookById(Long id);
 
